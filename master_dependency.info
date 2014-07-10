@@ -72,7 +72,7 @@ dependencies[] = entityform
 ; SEO
 dependencies[] = pathauto
 dependencies[] = globalredirect
-dependencies[] = google_analytics
+dependencies[] = googleanalytics
 dependencies[] = xmlsitemap
 dependencies[] = metatag
 dependencies[] = site_verify
