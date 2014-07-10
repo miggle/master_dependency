@@ -1,0 +1,89 @@
+name = "Master Dependency"
+description = "Enables all required module dependencies"
+package = "Miggle"
+project = "master_dependency"
+core = "7.x"
+
+; CORE
+dependencies[] = block
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+;dependencies[] = rdf
+dependencies[] = search
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = update
+dependencies[] = user
+
+; CORE CONTRIB
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = ctools
+dependencies[] = token
+dependencies[] = entity
+dependencies[] = features
+dependencies[] = libraries
+dependencies[] = entityreference
+dependencies[] = strongarm
+
+; DEVELOPMENT
+dependencies[] = devel
+dependencies[] = features_override
+
+; USABILITY
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = module_filter
+
+; FIELD, MEDIA AND CONTENT EDITING ENHANCEMENTS
+dependencies[] = wysiwyg
+dependencies[] = linkit
+dependencies[] = link
+dependencies[] = email
+dependencies[] = field_group
+dependencies[] = media
+dependencies[] = file_entity
+dependencies[] = inline_entity_form
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = date_popup
+
+; SITE BUILDING TOOLS
+dependencies[] = rules
+dependencies[] = rules_admin
+dependencies[] = ds
+dependencies[] = context
+dependencies[] = context_ui
+dependencies[] = eck
+dependencies[] = entityform
+
+; SEO
+dependencies[] = pathauto
+dependencies[] = globalredirect
+dependencies[] = google_analytics
+dependencies[] = xmlsitemap
+dependencies[] = metatag
+dependencies[] = site_verify
+
+; OPTIONAL MODULES
+
+; PERFORMANCE
+; dependencies[] = memcache
+; dependencies[] = varnish
+
+; SEARCH
+; dependencies[] = apachesolr
+; dependencies[] = apachesolr_multisitesearch
+; dependencies[] = facetapi
