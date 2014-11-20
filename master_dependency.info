@@ -4,6 +4,10 @@ package = "Miggle"
 project = "master_dependency"
 core = "7.x"
 
+; TESTING - include a predicatble passing test
+files[] = master_dependency.test
+testing_api = 2.x
+
 ; CORE
 dependencies[] = block
 dependencies[] = dblog

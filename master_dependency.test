@@ -1,0 +1,32 @@
+<?php
+/**
+ * @file
+ * Tests of master_dependency module.
+ */
+
+
+/**
+ * Predictable test case which provides a test that always passes.
+ */
+class MasterDependencyUnitTest extends DrupalUnitTestCase {
+  /**
+   * Registers test case.
+   */
+  public static function getInfo() {
+    return array(
+      'name' => 'Unit test that always passes',
+      'description' => 'Asserts that TRUE is true. Use this test when you need
+                        a quick test that passes. Useful to validate your test
+                        workflow. NOTE: as a DrupalUnitTestCase, does not
+                        requires access to the database nor files.',
+      'group' => 'MasterDependency',
+    );
+  }
+
+  /**
+   * Always passes.
+   */
+  public function testThatAlwaysPasses() {
+    $this->assertTrue(TRUE);
+  }
+}
