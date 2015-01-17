@@ -1,7 +1,7 @@
 <?php
 
 function master_dependency_menu() {
-  $items['abc/def'] = array(
+	  $items['abc/def'] = array(
     'page callback' => 'master_dependency_view',
   );
   return $items;
