@@ -81,6 +81,10 @@ dependencies[] = xmlsitemap
 dependencies[] = metatag
 dependencies[] = site_verify
 
+; PROTECTION
+dependencies[] = honeypot
+dependencies[] = flood_control
+
 ; OPTIONAL MODULES
 
 ; PERFORMANCE
