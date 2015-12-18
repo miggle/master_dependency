@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file.
+ * Install file.
+ */
+
+
+/**
+ * Helper function for reverting specified features.
+ *
+ * Example use:
+ * $features = array(
+ *   'my_feature',
+ *   'my_other_feature',
+ * );
+ *
+ * _master_dependency_revert_feature($features);
+ *
+ * @param array $modules
+ * @return string
+ */
+function _master_dependency_revert_feature($modules){
+  module_load_include('inc', 'features', 'features.export');
+  features_include();
+
+  foreach ($modules as $module) {
+    $feature = features_get_features($module);
+    $components = array_keys($feature->info['features']);
+    features_revert(array($module => $components));
+  }
+  return "reverted features";
+}
